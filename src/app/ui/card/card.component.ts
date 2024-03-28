@@ -10,5 +10,8 @@ import { Card } from '../../models/card';
     styleUrl: './card.component.css',
 })
 export class CardComponent {
+    /**
+     * The card to display.
+     */
     @Input({ required: true }) card!: Card;
 }

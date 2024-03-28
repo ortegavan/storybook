@@ -220,7 +220,7 @@
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-8e84d2f495da967d5967947484ac03db9e6d291804974010a4a8d9e7d5bc221ea08a4db43b0e6cd78d3957df0cd5243678d2616fe0c721b63c0c815fd4111294",
+            "id": "component-CardComponent-f8fa8fdfd19a52ac9c8d2fba535541e35b999ba260b1b57193f684d3b9cdc58e28f673cb61a69062aa45ca9ae8b7fb8036b3b843e8d29814033d0fa13499e796",
             "file": "src/app/ui/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -242,7 +242,9 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "optional": false,
-                    "line": 13,
+                    "rawdescription": "\n\nThe card to display.\n",
+                    "description": "<p>The card to display.</p>\n",
+                    "line": 16,
                     "type": "Card",
                     "decorators": []
                 }
@@ -264,7 +266,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { CardModule } from 'primeng/card';\nimport { Card } from '../../models/card';\n\n@Component({\n    selector: 'app-card',\n    standalone: true,\n    imports: [CardModule],\n    templateUrl: './card.component.html',\n    styleUrl: './card.component.css',\n})\nexport class CardComponent {\n    @Input({ required: true }) card!: Card;\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { CardModule } from 'primeng/card';\nimport { Card } from '../../models/card';\n\n@Component({\n    selector: 'app-card',\n    standalone: true,\n    imports: [CardModule],\n    templateUrl: './card.component.html',\n    styleUrl: './card.component.css',\n})\nexport class CardComponent {\n    /**\n     * The card to display.\n     */\n    @Input({ required: true }) card!: Card;\n}\n",
             "styleUrl": "./card.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
@@ -569,7 +571,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 10,
+        "count": 16,
         "status": "low",
         "files": [
             {
@@ -605,9 +607,9 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "CardComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/2",
-                "status": "low"
+                "coveragePercent": 50,
+                "coverageCount": "1/2",
+                "status": "medium"
             },
             {
                 "filePath": "src/stories/button.component.ts",
