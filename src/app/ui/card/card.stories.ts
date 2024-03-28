@@ -16,7 +16,7 @@ const card: Card = {
 const meta: Meta<CardComponent> = {
     title: 'UI/Card',
     component: CardComponent,
-    tags: ['autodocs'],
+    tags: ['autodocs'], // Define que a documentação será gerada automaticamente.
 };
 // Precisamos exportar as configurações do componente para que o Storybook possa renderizá-lo.
 export default meta;
